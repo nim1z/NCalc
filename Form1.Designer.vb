@@ -54,7 +54,7 @@ Partial Class Form1
         Me.InputA.MaxLength = 65536
         Me.InputA.Name = "InputA"
         Me.InputA.ReadOnly = True
-        Me.InputA.Size = New System.Drawing.Size(200, 34)
+        Me.InputA.Size = New System.Drawing.Size(200, 41)
         Me.InputA.TabIndex = 0
         Me.InputA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.InputA.WordWrap = False
@@ -89,6 +89,7 @@ Partial Class Form1
         Me.ModeLabel.Size = New System.Drawing.Size(35, 36)
         Me.ModeLabel.TabIndex = 3
         Me.ModeLabel.Text = " "
+        Me.ModeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Key0
         '
@@ -268,7 +269,7 @@ Partial Class Form1
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(224, 241)
