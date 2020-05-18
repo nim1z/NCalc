@@ -5,122 +5,109 @@
     Public IsInputDecimalpoint As Integer = 0
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' ロード時にフォーカスを設定する
-        Me.ActiveControl = ButtonExec
+        ActiveControl = ButtonExec
         'フォームが先にキーを受け取る設定
         KeyPreview = True
         InputA.Text = 0
     End Sub
     Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         Select Case e.KeyCode
-            Case Keys.Enter
-                If Me.ButtonExec.Enabled = True Then
-                    Me.ButtonExec.Focus()
-                    Me.ButtonExec.PerformClick()
-                End If
-                e.Handled = True
             Case Keys.Oemplus
-                If Me.KeyModePlus.Enabled = True Then
-                    Me.KeyModePlus.Focus()
-                    Me.KeyModePlus.PerformClick()
+                If KeyModePlus.Enabled = True Then
+                    KeyModePlus.Focus()
+                    KeyModePlus.PerformClick()
                 End If
-                e.Handled = True
             Case Keys.OemMinus
-                If Me.KeyModeMinus.Enabled = True Then
-                    Me.KeyModeMinus.Focus()
-                    Me.KeyModeMinus.PerformClick()
+                If KeyModeMinus.Enabled = True Then
+                    KeyModeMinus.Focus()
+                    KeyModeMinus.PerformClick()
                 End If
-                e.Handled = True
             Case Keys.Multiply
-                If Me.KeyModeTimes.Enabled = True Then
-                    Me.KeyModeTimes.Focus()
-                    Me.KeyModeTimes.PerformClick()
+                If KeyModeTimes.Enabled = True Then
+                    KeyModeTimes.Focus()
+                    KeyModeTimes.PerformClick()
                 End If
-                e.Handled = True
             Case Keys.Divide
-                If Me.KeyModeDivide.Enabled = True Then
-                    Me.KeyModeDivide.Focus()
-                    Me.KeyModeDivide.PerformClick()
+                If KeyModeDivide.Enabled = True Then
+                    KeyModeDivide.Focus()
+                    KeyModeDivide.PerformClick()
                 End If
-                e.Handled = True
             Case Keys.OemBackslash
-                If Me.KeyModeDivideWithRemainder.Enabled = True Then
-                    Me.KeyModeDivideWithRemainder.Focus()
-                    Me.KeyModeDivideWithRemainder.PerformClick()
+                If KeyModeDivideWithRemainder.Enabled = True Then
+                    KeyModeDivideWithRemainder.Focus()
+                    KeyModeDivideWithRemainder.PerformClick()
                 End If
-                e.Handled = True
             Case Keys.Back
-                If Me.KeyC.Enabled = True Then
-                    Me.KeyC.Focus()
-                    Me.KeyC.PerformClick()
+                If KeyC.Enabled = True Then
+                    KeyC.Focus()
+                    KeyC.PerformClick()
                 End If
-                e.Handled = True
 
             Case Keys.Decimal
-                If Me.Key1.Enabled = True Then
-                    Me.KeyDecimalpoint.Focus()
-                    Me.KeyDecimalpoint.PerformClick()
+                If Key1.Enabled = True Then
+                    KeyDecimalpoint.Focus()
+                    KeyDecimalpoint.PerformClick()
                 End If
-                e.Handled = True
             Case Keys.NumPad0, Keys.D0
-                If Me.Key1.Enabled = True Then
-                    Me.Key1.Focus()
-                    Me.Key1.PerformClick()
+                If Key1.Enabled = True Then
+                    Key1.Focus()
+                    Key1.PerformClick()
+                    ActiveControl = ButtonExec
                 End If
-                e.Handled = True
             Case Keys.NumPad1, Keys.D1
-                If Me.Key1.Enabled = True Then
-                    Me.Key1.Focus()
-                    Me.Key1.PerformClick()
+                If Key1.Enabled = True Then
+                    Key1.Focus()
+                    Key1.PerformClick()
+                    ActiveControl = ButtonExec
                 End If
-                e.Handled = True
             Case Keys.NumPad2, Keys.D2
-                If Me.Key2.Enabled = True Then
-                    Me.Key2.Focus()
-                    Me.Key2.PerformClick()
+                If Key2.Enabled = True Then
+                    Key2.Focus()
+                    Key2.PerformClick()
+                    ActiveControl = ButtonExec
                 End If
-                e.Handled = True
             Case Keys.NumPad3, Keys.D3
-                If Me.Key3.Enabled = True Then
-                    Me.Key3.Focus()
-                    Me.Key3.PerformClick()
+                If Key3.Enabled = True Then
+                    Key3.Focus()
+                    Key3.PerformClick()
+                    ActiveControl = ButtonExec
                 End If
-                e.Handled = True
             Case Keys.NumPad4, Keys.D4
-                If Me.Key4.Enabled = True Then
-                    Me.Key4.Focus()
-                    Me.Key4.PerformClick()
+                If Key4.Enabled = True Then
+                    Key4.Focus()
+                    Key4.PerformClick()
+                    ActiveControl = ButtonExec
                 End If
-                e.Handled = True
             Case Keys.NumPad5, Keys.D5
-                If Me.Key5.Enabled = True Then
-                    Me.Key5.Focus()
-                    Me.Key5.PerformClick()
+                If Key5.Enabled = True Then
+                    Key5.Focus()
+                    Key5.PerformClick()
+                    ActiveControl = ButtonExec
                 End If
-                e.Handled = True
             Case Keys.NumPad6, Keys.D6
-                If Me.Key6.Enabled = True Then
-                    Me.Key6.Focus()
-                    Me.Key6.PerformClick()
+                If Key6.Enabled = True Then
+                    Key6.Focus()
+                    Key6.PerformClick()
+                    ActiveControl = ButtonExec
                 End If
-                e.Handled = True
             Case Keys.NumPad7, Keys.D7
-                If Me.Key7.Enabled = True Then
-                    Me.Key7.Focus()
-                    Me.Key7.PerformClick()
+                If Key7.Enabled = True Then
+                    Key7.Focus()
+                    Key7.PerformClick()
+                    ActiveControl = ButtonExec
                 End If
-                e.Handled = True
             Case Keys.NumPad8, Keys.D8
-                If Me.Key8.Enabled = True Then
-                    Me.Key8.Focus()
-                    Me.Key8.PerformClick()
+                If Key8.Enabled = True Then
+                    Key8.Focus()
+                    Key8.PerformClick()
+                    ActiveControl = ButtonExec
                 End If
-                e.Handled = True
             Case Keys.NumPad9, Keys.D9
-                If Me.Key9.Enabled = True Then
-                    Me.Key9.Focus()
-                    Me.Key9.PerformClick()
+                If Key9.Enabled = True Then
+                    Key9.Focus()
+                    Key9.PerformClick()
+                    ActiveControl = ButtonExec
                 End If
-                e.Handled = True
         End Select
     End Sub
     Private Sub ButtonExec_Click(sender As Object, e As EventArgs) Handles ButtonExec.Click
